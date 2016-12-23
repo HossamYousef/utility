@@ -28,4 +28,5 @@ This will install the `avoxx/utility` package and all required dependencies.
 
 ##Documentation
 
+* [ArrayHelper](https://avoxx.org/docs/v1/utility/array-helper)
 * [Debug](https://avoxx.org/docs/v1/utility/debug)
