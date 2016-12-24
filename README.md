@@ -17,16 +17,11 @@
 The AVOXX packages utilizes [Composer](https://getcomposer.org) to manage their dependencies.
 So, before using any of the AVOXX packages, make sure you have Composer installed on your machine.
 
-	composer require avoxx/utility
-	
-This will install the `avoxx/utility` package and all required dependencies.
-	
-##Includes
+    composer require avoxx/utility
 
-* Debug (a useful helper that displays structured information about a variable)
-* To be continued...
+This will install the `avoxx/utility` package and all required dependencies.
 
 ##Documentation
 
-* [ArrayHelper](https://avoxx.org/docs/v1/utility/array-helper)
-* [Debug](https://avoxx.org/docs/v1/utility/debug)
+* [ArrayHelper](https://avoxx.org/docs/v1/utility/array-helper) (contains useful array helpers)
+* [Debug](https://avoxx.org/docs/v1/utility/debug) (displays structured information about a variable)
