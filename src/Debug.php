@@ -6,7 +6,7 @@ namespace Avoxx\Utility;
  * AVOXX - PHP Framework Packages
  *
  * @author    Merlin Christen <merloxx@avoxx.org>
- * @copyright Copyright (c) 2016 Merlin Christen
+ * @copyright Copyright (c) 2016 - 2017 Merlin Christen
  * @license   The MIT License (MIT)
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
