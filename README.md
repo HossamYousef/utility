@@ -1,4 +1,4 @@
-<p align="center"><a href="https://avoxx.org"><img width="250"src="https://avoxx.org/assets/img/logos-components/utility-components.svg"/></a></p>
+<p align="center"><a href="https://avoxx.org"><img width="250" src="https://avoxx.org/assets/img/logos-components/utility-components.svg"/></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/avoxx/utility"><img title="Build Status" src="https://travis-ci.org/avoxx/utility.svg?branch=master"/></a>
@@ -23,5 +23,5 @@ This will install the `avoxx/utility` package and all required dependencies.
 
 ##Documentation
 
-* [ArrayHelper](https://avoxx.org/docs/v1/utility/array-helper) (contains useful array helpers)
-* [Debug](https://avoxx.org/docs/v1/utility/debug) (displays structured information about a variable)
+* [ArrayHelper](https://avoxx.org/docs/master/utility/array-helper) (contains useful array helpers)
+* [Debug](https://avoxx.org/docs/master/utility/debug) (displays structured information about a variable)
