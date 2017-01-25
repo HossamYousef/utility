@@ -46,7 +46,7 @@ class ArrayHelper
     /**
      * Determine if the given key exists in array.
      *
-     * @param array|\ArrayAccess $array
+     * @param \ArrayAccess|array $array
      * @param string|int         $key
      *
      * @return bool
@@ -63,7 +63,7 @@ class ArrayHelper
     /**
      * Return an item from a given array.
      *
-     * @param array|\ArrayAccess $array
+     * @param \ArrayAccess|array $array
      * @param string             $key
      * @param mixed              $default
      *
@@ -75,7 +75,7 @@ class ArrayHelper
             return $default;
         }
 
-        if (is_null($key)) {
+        if ($key === null) {
             return $array;
         }
 
@@ -97,15 +97,15 @@ class ArrayHelper
     /**
      * Return the first item from a given array.
      *
-     * @param array|\ArrayAccess $array
-     * @param callable|null      $callback
-     * @param mixed              $default
+     * @param array         $array
+     * @param callable|null $callback
+     * @param mixed         $default
      *
      * @return mixed
      */
-    public static function first($array, $callback = null, $default = null)
+    public static function first($array, callable $callback = null, $default = null)
     {
-        if (is_null($callback)) {
+        if ($callback === null) {
             if (empty($array)) {
                 return $default;
             }
@@ -116,7 +116,7 @@ class ArrayHelper
         }
 
         foreach ($array as $key => $value) {
-            if (call_user_func($callback, $value, $key)) {
+            if ($callback($value, $key)) {
                 return $value;
             }
         }
@@ -127,15 +127,15 @@ class ArrayHelper
     /**
      * Return the last item from a given array.
      *
-     * @param array|\ArrayAccess $array
-     * @param callable|null      $callback
-     * @param mixed              $default
+     * @param array         $array
+     * @param callable|null $callback
+     * @param mixed         $default
      *
      * @return mixed
      */
-    public static function last($array, $callback = null, $default = null)
+    public static function last($array, callable $callback = null, $default = null)
     {
-        if (is_null($callback)) {
+        if ($callback === null) {
             if (empty($array)) {
                 return $default;
             }
@@ -149,14 +149,14 @@ class ArrayHelper
     /**
      * Check if an item or items exists in a given array.
      *
-     * @param array|\ArrayAccess $array
+     * @param \ArrayAccess|array $array
      * @param string|array       $key
      *
-     * @return boolean
+     * @return bool
      */
     public static function has($array, $key)
     {
-        if (is_null($key)) {
+        if ($key === null) {
             return false;
         }
 
@@ -188,8 +188,8 @@ class ArrayHelper
     /**
      * Filter the array using the given callback.
      *
-     * @param array|\ArrayAccess $array
-     * @param callable           $callback
+     * @param array    $array
+     * @param callable $callback
      *
      * @return array
      */
@@ -201,8 +201,8 @@ class ArrayHelper
     /**
      * Get a subset of the items from the given array.
      *
-     * @param array|\ArrayAccess $array
-     * @param array|string       $key
+     * @param array        $array
+     * @param array|string $key
      *
      * @return array
      */
@@ -214,8 +214,8 @@ class ArrayHelper
     /**
      * Remove one ore more items from a given array.
      *
-     * @param array|\ArrayAccess &$array
-     * @param array|string       $keys
+     * @param array        $array
+     * @param array|string $keys
      */
     public static function forget(&$array, $keys)
     {
